@@ -19,13 +19,19 @@ body{
 	height: 500px;
 }
 .crs-img-1{
-	background: url('../img/slider-img1.jpg');
+	background: url('../img/solana.webp');
 	background-size: cover;
 	background-position: center;
 	width:100%;
 }
+.crs-img-11{
+	background: url('../img/pump.fun-bot.gif');
+	background-size: cover;
+	background-position: center;
+	width:90%;
+}
 .crs-img-2{
-	background: url('../img/slider-img2.jpg');
+	background: url('../img/pump.fun-bot.gif');
 	background-size: cover;
 	background-position: center;
 	width:100%;
@@ -52,7 +58,7 @@ body{
 
 /*Get Started*/
 #get-started{
-	background:url('../img/showcase2.jpg');
+	background:url('../img/test.gif');
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -142,17 +148,17 @@ body{
 	min-height: 300px;
 }
 #about-services .fas{
-	font-size:50px;
+	font-size:0px;
 }
 
 /*Services Section*/
 /*Services Header*/
 #services{
-	background:url('../img/slider-img4.jpg');
+	background:url('../img/giphy.gif');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 300px;
+	min-height: 400px;
 	position: relative;
 }
 
@@ -175,7 +181,7 @@ body{
 	width: 100%;
 }
 #contact{
-	background:url('../img/gallery7.jpg');
+	background:url('../img/imgaes.gif');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
