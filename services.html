@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Token</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width; initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<script src="https://terminal.jup.ag/main-v2.js" ></script>
+</head>
+<body>
+
+	<!-- Navbar Section Start -->
+	<nav class="navbar navbar-dark navbar-expand-lg"  uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="img/logo1.png" class="img-fluid p-0" style="width: 35%; ">
+				<div class="ml-2 p-0 d-inline webT"><font face="impact"size="+2">$ZOL</font></div>
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navBar">
+				<ul class="navbar-nav  ml-auto ">
+
+					<li class="nav-item">
+						<a class="nav-link " href="index.html"><font face="impact"size="+2">Home</font></a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="about.html"><font face="impact"size="+2">About</font></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="services.html"><font face="impact"size="+2">Buy</font></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html"><font face="impact"size="+2">MEMES</font></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"><font face="impact"size="+2">Contact</font></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Nav Section End -->
+
+	
+	<!-- Services Section Start -->
+	<style>
+
+		#ABC {
+		  background-color: rgb(53, 53, 53);
+		  height: 100%;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		}
+	
+		body{
+		  background: #a92727;
+		  margin: 0;
+		} 
+	
+		</style>
+	<section id="services">
+		<div id="jupiter-terminal" class="ABC"></div>
+		<script>
+	  
+		  document.addEventListener("DOMContentLoaded", function () {
+	  
+			console.log('LOADED')
+			
+			//create jupiter-terminal div
+			const jupiterTerminal = document.createElement('div')
+			jupiterTerminal.id = 'jupiter-terminal'
+			document.body.appendChild(jupiterTerminal)
+	  
+			// initialize the terminal
+			window.Jupiter.init({
+			  displayMode: "integrated",
+			  integratedTargetId: "jupiter-terminal",
+			  endpoint: "https://mainnet.helius-rpc.com/?api-key=YOUR_API_KEY_HERE",
+			  formProps: {
+				fixedOutputMint: false
+			  }
+			});
+		  });
+		</script>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+</body>
+</html>
