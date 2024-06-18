@@ -5,7 +5,7 @@ body{
 
 }
 .navbar {
-	background:#a92727;
+	background:#336d16;
 }
 .navbar-nav  li a:hover {
 	color:#fff !important;
@@ -18,6 +18,85 @@ body{
 .carousel-item{
 	height: 500px;
 }
+
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoomnav {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+  }
+  
+  .zoomnav:hover {
+	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.zoomlogo {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+  }
+  .zoomlogo:hover {
+	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoomtab {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+  }
+  .zoomtab:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoomabout {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+  }
+  .zoomabout:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .zoommemeindex {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 300px;
+	height: 400px;
+	margin: 0 auto;
+  }
+  .zoommemeindex:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .zoomhack {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+  }
+  .zoomhack:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
 .crs-img-1{
 	background: url('../img/slider-img4.jpg');
 	background-size: cover;

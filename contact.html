@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<audio id="my-audio" src="untitled.mp3"></audio>
+    <script type="text/javascript">
+        var isAudioPlayed = false;
+        function playAudio() {
+            
+            isAudioPlayed = true;
+            const myAudio = document.getElementById("my-audio");
+            myAudio.play();
+        }
+
+
+        document.body.onclick = ()=>{
+            if(isAudioPlayed) return ;
+            playAudio();
+        }
+    </script>
 	<title>ZOO</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width:device-width; initial-scale=1.0">

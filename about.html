@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>	
+	<audio id="my-audio" src="untitled.mp3"></audio>
+    <script type="text/javascript">
+        var isAudioPlayed = false;
+        function playAudio() {
+            
+            isAudioPlayed = true;
+            const myAudio = document.getElementById("my-audio");
+            myAudio.play();
+        }
+
+
+        document.body.onclick = ()=>{
+            if(isAudioPlayed) return ;
+            playAudio();
+        }
+    </script>
 	<title>ZOO</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width:device-width; initial-scale=1.0">
@@ -84,8 +100,9 @@
 					</p>
 				</div>
 				<div class="col-lg-6 col-md-6 align-self-center text-center">
-					<img src="img/about/info.jpg" 
+					<div class="zoomabout"><img src="img/about/info.jpg" 
 					class="img-fluid w-90 h-70 rounded-circle">
+				</div>
 				</div>
 			</div>
 		</div>
@@ -99,58 +116,71 @@
 		<h2 ><font face="impact"  style="color:white">Roadmap</font></h2>
 		<div class="row">
 			<div class="col-lg-4 col-md-4">
-				<div class="card bg-success ">
-					<div class="card-body">
-						<i class="fas fa-envelope" ></i>
-						<h2 class="text-light m-0"><font face="impact">Token Supply</font></h2>
-						<p class="lead">1 Billion. Launching on PumpFun</p>
+				<div class="zoomtab">
+					<div class="card bg-success ">
+					
+						<div class="card-body">
+							<i class="fas fa-envelope" ></i>
+							<h2 class="text-light m-0"><font face="impact">Token Supply</font></h2>
+							<p class="lead">1 Billion. Launching on PumpFun</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4">
-				<div class="card bg-danger ">
-					<div class="card-body">
-						<i class="fas fa-car"></i>
-						<h2 class="text-light m-0"><font face="impact">Wen Calls?</font></h2>
-						<p class="lead">Reached out to callers and they agreed to call it when it reached 100k Market Cap.</p>
+				<div class="zoomtab">
+					<div class="card bg-danger ">
+						<div class="card-body">
+							<i class="fas fa-car"></i>
+							<h2 class="text-light m-0"><font face="impact">Wen Calls?</font></h2>
+							<p class="lead">Reached out to callers and they agreed to call it when it reached 100k Market Cap.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4">
-				<div class="card bg-primary ">
-					<div class="card-body">
-						<i class="fas fa-play"></i>
-						<h2 class="text-light m-0"><font face="impact">Wen Dex?</font></h2>
-						<p class="lead">Paying dex at 100k!</p>
+				<div class="zoomtab">
+					<div class="card bg-primary ">
+						<div class="card-body">
+							<i class="fas fa-play"></i>
+							<h2 class="text-light m-0"><font face="impact">Wen Dex?</font></h2>
+							<p class="lead">Paying dex at 100k!</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row mt-3">
 			<div class="col-lg-4 col-md-4">
-				<div class="card bg-info ">
-					<div class="card-body">
-						<i class="fas fa-cart-plus"></i>
-						<h2 class="text-light m-0"><font face="impact">Mission</font></h2>
-						<p class="lead">Memecoin launchpad</p>
+				<div class="zoomtab">
+					<div class="card bg-info ">
+						<div class="card-body">
+							<i class="fas fa-cart-plus"></i>
+							<h2 class="text-light m-0"><font face="impact">Mission</font></h2>
+							<p class="lead">Memecoin launchpad</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4">
-				<div class="card bg-primary ">
-					<div class="card-body">
-						<i class="fas fa-tree"></i>
-						<h2 class="text-light m-0"><font face="impact">Vision</font></h2>
-						<p class="lead">We envision a memecoin where all degens makes a bag while the jeets apply for wcdonalds.</p>
+				<div class="zoomtab">
+					<div class="card bg-primary">
+						<div class="card-body">
+							<i class="fas fa-tree"></i>
+							<h2 class="text-light m-0"><font face="impact">Vision</font></h2>
+							<p class="lead">We envision a memecoin where all degens makes a bag while the jeets apply for wcdonalds.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4">
-				<div class="card bg-success ">
-					<div class="card-body">
-						<i class="fas fa-history"></i>
-						<h2 class="text-light m-0"><font face="impact">Conviction</font></h2>
-						<p class="lead">A 100 push up. -Jake Peralta</p>
+				<div class="zoomtab">
+					<div class="card bg-success ">
+						<div class="card-body">
+							<i class="fas fa-history"></i>
+							<h2 class="text-light m-0"><font face="impact">Conviction</font></h2>
+							<p class="lead">A 100 push up. -Jake Peralta</p>
+						</div>
 					</div>
 				</div>
 			</div>
