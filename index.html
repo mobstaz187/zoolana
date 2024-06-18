@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<audio id="my-audio" autoplay src="Untitled.mp3"></audio>
-
+	<audio id="my-audio" src="untitled.mp3"></audio>
     <script type="text/javascript">
-
         var isAudioPlayed = false;
-
-
-
         function playAudio() {
             
             isAudioPlayed = true;
@@ -21,20 +16,6 @@
             if(isAudioPlayed) return ;
             playAudio();
         }
-
-/*         
-        window.onload = () => {
-            const myAudio = document.getElementById("my-audio");
-            console.log(myAudio);
-            myAudio.addEventListener('canplay', (event) => {  
-                console.log("CnPlay",event)
-                    event.target.play()
-            })
-        }
- */
-
-        
-
     </script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
@@ -67,7 +48,7 @@
 				<ul class="navbar-nav  ml-auto ">
 
 					<li class="nav-item active">
-						<a class="nav-link " href="index.html"><font face="impact"size="+2">Home</font></a>
+						<a class="nav-link" href="index.html"><font face="impact"size="+2">Home</font></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="about.html"><font face="impact"size="+2">About</font></a>
@@ -156,7 +137,7 @@
 					  </p>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 align-self-center">
-					<img src="img/info.jpg" class="img-fluid">
+					<img class="zoomlogo" src="img/info.png" class="img-fluid">
 				</div>
 			</div>
 		</div>
@@ -183,18 +164,18 @@
 	<section id="showcase">
 
 		<div class="container">
-
 			<div class="row py-5 text-center">
-
 				<div class="col-lg-4 col-md-4">
-					<img src="img/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp" width="100px" height="60px"></img>
-
+						<img  class="zoom" src="img/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp" width="100px" height="60px"></img>
+						<p class="zoom" style="position:relative"><font size="+3">𝕏/Twitter</font></p>
 				</div>
 				<div class="col-lg-4 col-md-4">
-					<img src="img/icon.png" width="90px" ></img>
+						<img class="zoom" src="img/icon.png" width="90px" ></img>
+						<p class="zoom"><font size="+3">PumpFun</font></p>
 				</div>
 				<div class="col-lg-4 col-md-4">
-					<img src="img/tg.webp" width="90px" ></img>
+						<img class="zoom" src="img/tg.webp" width="90px" ></img>
+						<p class="zoom"><font size="+3">Telegram</font></p>
 				</div>
 			</div>
 
@@ -206,11 +187,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col mt-5 pt-4">
-						<div uk-lightbox>
-
-						</div>
-						<a class=" mt-5 text-light" href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><font face="impact" size="+10">Hack The Planet</font></a>
+						<div class="zoomhack" uk-lightbox>
+							<a class=" mt-5 text-light" href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><font face="impact" size="+10">Hack The Planet</font></a>
 						<p class="lead">Click To See</p>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -230,34 +211,34 @@
 			<div class="row mt-3">
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<a href="img/meme1.jpg">
-						<img src="img/meme1.jpg" class="img-fluid">
+						<img class="zoommemeindex" src="img/meme1.jpg" class="img-fluid">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<a href="img/meme2.png">
-						<img src="img/meme2.png" class="img-fluid">
+						<img class="zoommemeindex" src="img/meme2.png" class="img-fluid">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<a href="img/meme3.png">
-						<img src="img/meme3.png" class="img-fluid">
+						<img class="zoommemeindex" src="img/meme3.png" class="img-fluid">
 					</a>
 				</div>
 			</div>
 			<div class="row mt-3">
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<a href="img/meme4.png">
-						<img src="img/meme4.png" class="img-fluid">
+						<img class="zoommemeindex" src="img/meme4.png" class="img-fluid">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<a href="img/meme5.png">
-						<img src="img/meme5.png" class="img-fluid">
+						<img class="zoommemeindex" src="img/meme5.png" class="img-fluid">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<a href="img/meme6.gif">
-						<img src="img/meme6.gif" class="img-fluid">
+						<img class="zoommemeindex" src="img/meme6.gif" class="img-fluid">
 					</a>
 				</div>
 			</div>
