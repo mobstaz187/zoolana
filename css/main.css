@@ -19,7 +19,7 @@ body{
 	height: 500px;
 }
 .crs-img-1{
-	background: url('../img/solana.webp');
+	background: url('../img/slider-img4.jpg');
 	background-size: cover;
 	background-position: center;
 	width:100%;
@@ -43,7 +43,7 @@ body{
 	width:100%;
 }
 .crs-img-4{
-	background: url('../img/slider-img4.jpg');
+	background: url('../img/solana.webp');
 	background-size: cover;
 	background-position: center;
 	width:100%;
@@ -240,8 +240,7 @@ body{
 	}
 	#gallery img{
 		width: 80%;
-		height: 200px;
-	}
+		height: 200px;l
 
 	#gallery .col-lg-4.col-md-4.col-sm-4{
 		width: 80%;
