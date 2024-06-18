@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+	<audio id="my-audio" src="untitled.mp3"></audio>
+
+    <script type="text/javascript">
+
+        var isAudioPlayed = false;
+
+
+
+        function playAudio() {
+            
+            isAudioPlayed = true;
+            const myAudio = document.getElementById("my-audio");
+            myAudio.play();
+        }
+
+
+        document.body.onclick = ()=>{
+            if(isAudioPlayed) return ;
+            playAudio();
+        }
+
+/*         
+        window.onload = () => {
+            const myAudio = document.getElementById("my-audio");
+            console.log(myAudio);
+            myAudio.addEventListener('canplay', (event) => {  
+                console.log("CnPlay",event)
+                    event.target.play()
+            })
+        }
+ */
+
+        
+
+    </script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -65,10 +99,11 @@
 			<div class="carousel-inner" role="listbox">
 				<div class="carousel-item crs-img-1 active">
 					<div class="container">
-						<div class="carousel-caption pb-5 mb-5 text-left">
-							<h2 class="display-4 text-light"><font face="impact">ZOOLANA</font></h2>
-							<p class="lead">
-								Powered by <br>Solana.
+						<div class="carousel-caption pb-5 mb-5 text-right">
+							<h2 class="display-4 text-light"><font face="impact">$ZOO</font></h2>
+							
+							<p>
+								CA: XXXXXXXXXXXXXXXXXXXXXX
 							</p>
 						</div>
 					</div>
@@ -86,11 +121,10 @@
 				</div>
 				<div class="carousel-item crs-img-4">
 					<div class="container">
-						<div class="carousel-caption pb-5 mb-5 text-right">
-							<h2 class="display-4 text-light"><font face="impact">$ZOO</font></h2>
-							
-							<p>
-								CA: XXXXXXXXXXXXXXXXXXXXXX
+						<div class="carousel-caption pb-5 mb-5 text-left">
+							<h2 class="display-4 text-light"><font face="impact">ZOOLANA</font></h2>
+							<p class="lead">
+								Powered by <br>Solana.
 							</p>
 						</div>
 					</div>
@@ -117,6 +151,9 @@
 					<p class="lead">
 					  Zoo posses all the hidden gems in the city of Solana. ZOO is where the heart is, ZOO is the way.
 					</p>
+					<p class="lead">
+						Click here for a surprise sound. 
+					  </p>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 align-self-center">
 					<img src="img/info.jpg" class="img-fluid">
